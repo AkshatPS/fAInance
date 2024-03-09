@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.profile {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info, .change-password {
+    flex-basis: 45%;
+}
+
+.profile h2, .change-password h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.profile-info form label, .change-password form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.profile-info form input, .change-password form input {
+    display: block;
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.profile-info form button, .change-password form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-info form button:hover, .change-password form button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .footer li {
+    float: left;
+  }
+  
+  .footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
