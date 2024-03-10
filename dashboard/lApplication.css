@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(127, 255, 212, 0.407);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.customer-box {
+    text-align: center;
+    margin-top: 20px; /* Added margin top */
+}
+
+.customer-image {
+    display: inline-block;
+}
+
+.customer-image img {
+    border-radius: 50%; /* Added border radius for circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Added box shadow */
+}
+
+
+
+.apply-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: skyblue;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #66b3ff;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: black;
+    color: skyblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.customer-reviews {
+    display: -ms-inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust the gap between columns */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.customer-review-container {
+    width: 25%;
+    height: 300px; /* Set a fixed height for consistency */
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.review {
+    background: #66ccff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(6, 63, 160, 0.963);
+    transition: all 0.3s ease;
+}
+
+.review img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(8, 52, 200, 0.919);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .footer li {
+    float: left;
+  }
+  
+  .footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
